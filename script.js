@@ -17,12 +17,12 @@ function drawInvertedTriangle(x, y, size, color) {
   
   
   setInterval(() => {
-    ctx.fillStyle = 'rgba(0, 0, 0, 0.05)'; 
+    ctx.fillStyle = 'rgba(106, 100, 100, 0.05)'; 
     ctx.fillRect(0, 0, canvas.width, canvas.height);
   
     const colors = ['white', 'gray', 'beige'];
-    const sizes = [200, 150, 100];
-    const baseYPosition = canvas.height / 2 - 100; 
+    const sizes = [200, 200, 200];
+    const baseYPosition = canvas.height / 3 - 100; 
   
     for (let i = 0; i < 3; i++) {
       drawInvertedTriangle(canvas.width / 2, baseYPosition + (i * 100), sizes[i], colors[i]);
